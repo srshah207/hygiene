@@ -21,7 +21,7 @@ jobs:
   release:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ inputs.tag || github.ref }}
       - uses: dtolnay/rust-toolchain@stable
@@ -45,7 +45,7 @@ jobs:
           "$hash  hygiene-windows-x86_64.exe" | Out-File hygiene-windows-x86_64.exe.sha256 -Encoding ascii
       - name: Smoke test packaged binary
         run: ./hygiene-windows-x86_64.exe --version
-      - uses: softprops/action-gh-release@v2
+      - uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ inputs.tag || github.ref_name }}
           files: |
