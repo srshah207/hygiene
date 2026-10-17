@@ -7,6 +7,10 @@ updates:
     commit-message:
       prefix: "ci"
     labels: ["dependencies"]
+    ignore:
+      # @1.70.0 pins the MSRV toolchain in ci.yml, it is not an action
+      # version; bumping it would defeat the MSRV job (and did, on PR #1).
+      - dependency-name: "dtolnay/rust-toolchain"
     groups:
       actions:
         patterns: ["*"]
