@@ -4,6 +4,19 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/); versioning is
 [SemVer](https://semver.org/). The CLI flag surface freezes at 1.0.
 
+## [0.4.1] - 2026-10-17
+
+### Added
+
+- Full CI/CD automation: weekly scheduled CI runs, MSRV (1.70) validation,
+  Dependabot dependency updates with auto-merge, automatic version tagging on
+  `main` (`vX.Y.Z` created from `Cargo.toml`), release dispatch, and a smoke
+  test of the packaged release binary.
+
+### Changed
+
+- Windows CI now runs the test suite natively before the release build.
+
 ## [0.4.0] - 2026-10-17
 
 ### Changed
