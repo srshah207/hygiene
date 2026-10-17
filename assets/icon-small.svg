@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="hygiene">
+  <!-- Small-size variant (16-48px): flat single teal, no fade, chunkier sparkle. -->
+  <circle cx="256" cy="256" r="256" fill="#0F172A"/>
+  <g fill="#14B8A6">
+    <rect x="223" y="54" width="66" height="82" rx="22" transform="rotate(9 256 256)"/>
+    <rect x="223" y="54" width="66" height="82" rx="22" transform="rotate(81 256 256)"/>
+    <rect x="223" y="54" width="66" height="82" rx="22" transform="rotate(117 256 256)"/>
+    <rect x="223" y="54" width="66" height="82" rx="22" transform="rotate(153 256 256)"/>
+    <rect x="223" y="54" width="66" height="82" rx="22" transform="rotate(189 256 256)"/>
+    <rect x="223" y="54" width="66" height="82" rx="22" transform="rotate(225 256 256)"/>
+    <rect x="223" y="54" width="66" height="82" rx="22" transform="rotate(261 256 256)"/>
+    <rect x="223" y="54" width="66" height="82" rx="22" transform="rotate(297 256 256)"/>
+    <rect x="223" y="54" width="66" height="82" rx="22" transform="rotate(333 256 256)"/>
+  </g>
+  <path fill="#FFFFFF" transform="translate(372 140)"
+        d="M 0 -52 C 9 -18 18 -9 52 0 C 18 9 9 18 0 52 C -9 18 -18 9 -52 0 C -18 -9 -9 -18 0 -52 Z"/>
+</svg>

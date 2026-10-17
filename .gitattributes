@@ -1,0 +1,3 @@
+# Normalize all text files to LF in the repository and working tree;
+# keeps Linux CI (rustfmt, clippy) byte-identical to local Windows checkouts.
+* text=auto eol=lf

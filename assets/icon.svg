@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="hygiene">
+  <defs>
+    <linearGradient id="hg-ring" x1="96" y1="72" x2="432" y2="456" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2DD4BF"/>
+      <stop offset="1" stop-color="#0D9488"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="256" fill="#0F172A"/>
+  <g fill="url(#hg-ring)">
+    <rect x="224" y="48" width="64" height="88" rx="22" transform="rotate(117 256 256)"/>
+    <rect x="224" y="48" width="64" height="88" rx="22" transform="rotate(153 256 256)"/>
+    <rect x="224" y="48" width="64" height="88" rx="22" transform="rotate(189 256 256)"/>
+    <rect x="224" y="48" width="64" height="88" rx="22" transform="rotate(225 256 256)"/>
+    <rect x="224" y="48" width="64" height="88" rx="22" transform="rotate(261 256 256)"/>
+    <rect x="224" y="48" width="64" height="88" rx="22" transform="rotate(297 256 256)"/>
+    <rect x="224" y="48" width="64" height="88" rx="22" transform="rotate(333 256 256)"/>
+  </g>
+  <g fill="url(#hg-ring)" fill-opacity="0.35">
+    <rect x="224" y="48" width="64" height="88" rx="22" transform="rotate(9 256 256)"/>
+    <rect x="224" y="48" width="64" height="88" rx="22" transform="rotate(81 256 256)"/>
+  </g>
+  <path fill="#FFFFFF" transform="translate(372 140)"
+        d="M 0 -50 C 5 -14 14 -5 50 0 C 14 5 5 14 0 50 C -5 14 -14 5 -50 0 C -14 -5 -5 -14 0 -50 Z"/>
+</svg>

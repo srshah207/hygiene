@@ -1,0 +1,29 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: build + publish
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo build --release
+      - name: Package + checksum
+        shell: pwsh
+        run: |
+          Copy-Item target/release/hygiene.exe hygiene-windows-x86_64.exe
+          $hash = (Get-FileHash hygiene-windows-x86_64.exe -Algorithm SHA256).Hash.ToLower()
+          "$hash  hygiene-windows-x86_64.exe" | Out-File hygiene-windows-x86_64.exe.sha256 -Encoding ascii
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            hygiene-windows-x86_64.exe
+            hygiene-windows-x86_64.exe.sha256
+          generate_release_notes: true

@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><style>
+  html, body { margin: 0; padding: 0; width: 1280px; height: 640px; overflow: hidden; }
+  body {
+    background:
+      radial-gradient(900px 500px at 68% 18%, rgba(13, 148, 136, 0.28), transparent 62%),
+      #0B1120;
+  }
+  .grid {
+    position: absolute; inset: 0;
+    background-image: radial-gradient(rgba(148, 163, 184, 0.14) 1.5px, transparent 1.6px);
+    background-size: 28px 28px;
+  }
+  .wrap {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 26px;
+  }
+  .name {
+    font-family: Inter, 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 600; font-size: 92px; letter-spacing: -3px; color: #F8FAFC;
+  }
+  .tag {
+    font-family: Inter, 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 32px; color: #94A3B8; letter-spacing: -0.3px;
+  }
+  .url {
+    position: absolute; right: 44px; bottom: 34px;
+    font-family: Consolas, 'Cascadia Mono', monospace;
+    font-size: 21px; font-weight: 500; color: #94A3B8; letter-spacing: 0.5px;
+  }
+  .mark { margin-bottom: 2px; }
+</style></head>
+<body>
+  <div class="grid"></div>
+  <div class="wrap">
+    <svg class="mark" width="148" height="148" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="hg-ring-sp" x1="96" y1="72" x2="432" y2="456" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#2DD4BF"/>
+          <stop offset="1" stop-color="#0D9488"/>
+        </linearGradient>
+      </defs>
+      <circle cx="256" cy="256" r="256" fill="#0F172A"/>
+      <g fill="url(#hg-ring-sp)">
+        <rect x="224" y="48" width="64" height="88" rx="22" transform="rotate(117 256 256)"/>
+        <rect x="224" y="48" width="64" height="88" rx="22" transform="rotate(153 256 256)"/>
+        <rect x="224" y="48" width="64" height="88" rx="22" transform="rotate(189 256 256)"/>
+        <rect x="224" y="48" width="64" height="88" rx="22" transform="rotate(225 256 256)"/>
+        <rect x="224" y="48" width="64" height="88" rx="22" transform="rotate(261 256 256)"/>
+        <rect x="224" y="48" width="64" height="88" rx="22" transform="rotate(297 256 256)"/>
+        <rect x="224" y="48" width="64" height="88" rx="22" transform="rotate(333 256 256)"/>
+      </g>
+      <g fill="url(#hg-ring-sp)" fill-opacity="0.35">
+        <rect x="224" y="48" width="64" height="88" rx="22" transform="rotate(9 256 256)"/>
+        <rect x="224" y="48" width="64" height="88" rx="22" transform="rotate(81 256 256)"/>
+      </g>
+      <path fill="#FFFFFF" transform="translate(372 140)"
+            d="M 0 -50 C 5 -14 14 -5 50 0 C 14 5 5 14 0 50 C -5 14 -14 5 -50 0 C -14 -5 -5 -14 0 -50 Z"/>
+    </svg>
+    <div class="name">hygiene</div>
+    <div class="tag">Dev-machine hygiene for Windows + WSL &mdash; one binary, zero deps, fully offline</div>
+  </div>
+  <div class="url">github.com/srshah207/hygiene</div>
+</body>
+</html>
